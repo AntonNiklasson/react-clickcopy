@@ -33,7 +33,7 @@ class ClickCopy extends React.Component {
   render() {
     const { children, className } = this.props;
     return (
-      <span ref={this.ref} onClick={this.onClick} className={className} style={{ position: 'relative' }}>
+      <span ref={this.ref} onClick={this.onClick} className={className}>
         {children}
       </span>
     );
