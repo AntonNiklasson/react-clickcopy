@@ -1,7 +1,7 @@
 {
   "name": "react-clickcopy",
   "description": "Click text to copy it to the system clipboard",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "author": "Anton Niklasson",
   "main": "dist/index.js",
   "license": "MIT",
@@ -9,7 +9,8 @@
     "lint": "eslint . --ignore-path .gitignore",
     "test": "jest",
     "tdd": "jest --watchAll",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublish": "npm run build"
   },
   "jest": {
     "setupFiles": [
