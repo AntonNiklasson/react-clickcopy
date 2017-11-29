@@ -1,7 +1,7 @@
 {
   "name": "react-clickcopy",
   "description": "Click text to copy it to the system clipboard",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Anton Niklasson",
   "main": "dist/index.js",
   "license": "MIT",
