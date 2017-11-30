@@ -5,10 +5,6 @@
   "author": "Anton Niklasson",
   "main": "dist/index.js",
   "license": "MIT",
-  "files": [
-    "dist",
-    "lib"
-  ],
   "scripts": {
     "lint": "eslint . --ignore-path .gitignore",
     "test": "jest",
