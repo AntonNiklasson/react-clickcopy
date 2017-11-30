@@ -5,6 +5,10 @@
   "author": "Anton Niklasson",
   "main": "dist/index.js",
   "license": "MIT",
+  "files": [
+    "dist",
+    "lib"
+  ],
   "scripts": {
     "lint": "eslint . --ignore-path .gitignore",
     "test": "jest",
@@ -13,9 +17,7 @@
     "prepublish": "npm run build"
   },
   "jest": {
-    "setupFiles": [
-      "./jestSetup.js"
-    ],
+    "setupFiles": ["./jestSetup.js"],
     "verbose": true,
     "transform": {
       "^.+\\.js$": "babel-jest"
@@ -23,15 +25,8 @@
     "globals": {
       "NODE_ENV": "test"
     },
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "src/frontend",
-      "src/shared"
-    ]
+    "moduleFileExtensions": ["js", "jsx"],
+    "moduleDirectories": ["node_modules"]
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
