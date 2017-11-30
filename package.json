@@ -1,7 +1,7 @@
 {
   "name": "react-clickcopy",
   "description": "Click text to copy it to the system clipboard",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Anton Niklasson",
   "main": "dist/index.js",
   "license": "MIT",
@@ -17,7 +17,9 @@
     "prepublish": "npm run build"
   },
   "jest": {
-    "setupFiles": ["./jestSetup.js"],
+    "setupFiles": [
+      "./jestSetup.js"
+    ],
     "verbose": true,
     "transform": {
       "^.+\\.js$": "babel-jest"
@@ -25,8 +27,13 @@
     "globals": {
       "NODE_ENV": "test"
     },
-    "moduleFileExtensions": ["js", "jsx"],
-    "moduleDirectories": ["node_modules"]
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ]
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
