@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>react-clickcopy | Demo!</title>
+  <style>
+    body {
+      background: Tomato;
+      color: White;
+      font: 20px 'Helvetica Neue', helvetica, sans-serif;
+    }
+    .wrapper {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+    .copyable {
+      transition: all 300ms;
+    }
+    .copyable:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper" />  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  <script src="../dist/index.js"></script>
+  <script type="text/babel">
+    ReactDOM.render((
+      <div className="content">
+        <ul>
+          <li>
+            <ClickCopy className="copyable">Lorem ipsum</ClickCopy>
+          </li>
+          <li>
+            <ClickCopy className="copyable">Ipsum Dolor</ClickCopy>
+          </li>
+          <li>
+            <ClickCopy className="copyable">Dolor Sit</ClickCopy>
+          </li>
+        </ul>
+      </div>
+    ), document.querySelector('.wrapper'));
+  </script>
+</body>
+</html>

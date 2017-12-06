@@ -4,8 +4,8 @@ export default {
   input: 'lib/index.js',
   output: {
     file: 'dist/index.js',
-    format: 'cjs',
-    name: 'react-clickcopy',
+    format: 'umd',
+    name: 'ClickCopy',
   },
   plugins: [
     babel({
