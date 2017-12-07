@@ -17,19 +17,15 @@
     "setupFiles": [
       "./jestSetup.js"
     ],
-    "verbose": true,
+    "globals": {
+      "NODE_END": true
+    },
     "transform": {
       "^.+\\.js$": "babel-jest"
     },
-    "globals": {
-      "NODE_ENV": "test"
-    },
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ],
     "moduleDirectories": [
-      "node_modules"
+      "node_modules",
+      "./lib"
     ]
   },
   "devDependencies": {
