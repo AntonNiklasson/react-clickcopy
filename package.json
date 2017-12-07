@@ -10,6 +10,7 @@
     "test": "jest",
     "tdd": "jest --watchAll",
     "build": "rollup -c",
+    "build:watch": "npm run build -- --watch",
     "prepublish": "npm run build"
   },
   "jest": {
