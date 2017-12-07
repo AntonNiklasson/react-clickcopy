@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "eslint . --ignore-path .gitignore",
     "test": "jest",
-    "tdd": "jest --watchAll",
+    "tdd": "npm run test -- --watchAll",
     "build": "rollup -c",
     "build:watch": "npm run build -- --watch",
     "prepublish": "npm run build"
@@ -17,9 +17,6 @@
     "setupFiles": [
       "./jestSetup.js"
     ],
-    "globals": {
-      "NODE_END": true
-    },
     "transform": {
       "^.+\\.js$": "babel-jest"
     },
