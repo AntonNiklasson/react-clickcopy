@@ -18,12 +18,17 @@
       justify-content: center;
       align-items: center;
       font-weight: bold;
+      text-align: center;
     }
     .copyable {
       transition: all 300ms;
     }
     .copyable:hover {
       background: rgba(255, 255, 255, 0.2);
+    }
+    input {
+      padding: .4rem;
+      font-size: 1rem;
     }
   </style>
 </head>
@@ -37,11 +42,9 @@
   <script type="text/babel">
     ReactDOM.render((
       <div className="content">
-        <ul>
-          <li>
-            <ClickCopy className="copyable">Lorem ipsum</ClickCopy>
-          </li>
-        </ul>
+        <h2><ClickCopy className="copyable">Lorem Ipsum?</ClickCopy></h2>
+        <h2><ClickCopy className="copyable">Hello, World!</ClickCopy></h2>
+        <input type="text" />
       </div>
     ), document.querySelector('.wrapper'));
   </script>
