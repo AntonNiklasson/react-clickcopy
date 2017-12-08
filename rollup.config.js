@@ -1,7 +1,7 @@
 import babel from 'rollup-plugin-babel';
 
 export default {
-  input: 'lib/index.js',
+  input: 'lib/ClickCopy.js',
   output: {
     file: 'dist/react-clickcopy.js',
     format: 'umd',

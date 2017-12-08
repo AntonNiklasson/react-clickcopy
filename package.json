@@ -3,7 +3,7 @@
   "description": "Click text to copy it to the system clipboard",
   "version": "0.0.3-0",
   "author": "Anton Niklasson",
-  "main": "dist/index.js",
+  "main": "dist/react-clickcopy.js",
   "license": "MIT",
   "scripts": {
     "lint": "eslint . --ignore-path .gitignore",
